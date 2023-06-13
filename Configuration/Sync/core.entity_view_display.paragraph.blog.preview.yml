@@ -1,0 +1,42 @@
+uuid: a01940be-c405-4d90-90d3-8aab6c4d7840
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.blog.field_blog_picture
+    - field.field.paragraph.blog.field_body
+    - paragraphs.paragraphs_type.blog
+  module:
+    - image
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.blog.preview
+targetEntityType: paragraph
+bundle: blog
+mode: preview
+content:
+  field_blog_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_body:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 400
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

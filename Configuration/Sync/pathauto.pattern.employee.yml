@@ -1,0 +1,22 @@
+uuid: 0c0e0d50-5e84-41a5-8ced-f1f28a90b04c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: employee
+label: employee
+type: 'canonical_entities:node'
+pattern: '/employee/[node:field_name]'
+selection_criteria:
+  0f1636ba-b982-42fc-8879-e7c963ea24ba:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 0f1636ba-b982-42fc-8879-e7c963ea24ba
+    context_mapping:
+      node: node
+    bundles:
+      employee: employee
+selection_logic: and
+weight: -5
+relationships: {  }

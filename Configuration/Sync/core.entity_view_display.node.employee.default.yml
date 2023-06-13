@@ -1,0 +1,245 @@
+uuid: 5f33d7ce-e20a-454d-9a35-13f8d48abc51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.employee.field_company_name
+    - field.field.node.employee.field_dob
+    - field.field.node.employee.field_goals
+    - field.field.node.employee.field_key_characteristics
+    - field.field.node.employee.field_name
+    - field.field.node.employee.field_profile_picture
+    - field.field.node.employee.field_tech_skill
+    - field.field.node.employee.field_title
+    - node.type.employee
+  module:
+    - age_field_formatter
+    - image
+    - layout_builder
+    - layout_discovery
+    - options
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: top
+          context_mapping: {  }
+          column_widths: 75-25
+        components:
+          1c17a0ab-55df-4080-a726-411522eef1ef:
+            uuid: 1c17a0ab-55df-4080-a726-411522eef1ef
+            region: first
+            configuration:
+              id: 'field_block:node:employee:field_name'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          fdb3ce32-d41e-4f39-a5aa-4395e3eea685:
+            uuid: fdb3ce32-d41e-4f39-a5aa-4395e3eea685
+            region: first
+            configuration:
+              id: 'field_block:node:employee:field_title'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          f49cf411-48bd-4434-8ec3-fa335066af3d:
+            uuid: f49cf411-48bd-4434-8ec3-fa335066af3d
+            region: second
+            configuration:
+              id: 'field_block:node:employee:field_profile_picture'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          722bcf53-0ccc-4ce1-bbce-72e117f52665:
+            uuid: 722bcf53-0ccc-4ce1-bbce-72e117f52665
+            region: first
+            configuration:
+              id: 'field_block:node:employee:field_dob'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: age_field_formatter
+                label: inline
+                settings:
+                  age_format: '1'
+                  year_suffix: true
+                  date_format: 'Y-m-d\TH:i:s'
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          a29e1e6e-550f-4ad6-a3bf-774de9ea7e2e:
+            uuid: a29e1e6e-550f-4ad6-a3bf-774de9ea7e2e
+            region: first
+            configuration:
+              id: 'field_block:node:employee:field_company_name'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          d00b0a0b-017b-424e-8740-023d23d08de8:
+            uuid: d00b0a0b-017b-424e-8740-023d23d08de8
+            region: first
+            configuration:
+              id: 'field_block:node:employee:field_tech_skill'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          2c10f43c-7bea-4356-a88d-f9d35d8ce1a9:
+            uuid: 2c10f43c-7bea-4356-a88d-f9d35d8ce1a9
+            region: content
+            configuration:
+              id: 'field_block:node:employee:field_key_characteristics'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          11133a00-ac8a-4905-9292-5f09aca4dcc5:
+            uuid: 11133a00-ac8a-4905-9292-5f09aca4dcc5
+            region: content
+            configuration:
+              id: 'field_block:node:employee:field_goals'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+        third_party_settings: {  }
+id: node.employee.default
+targetEntityType: node
+bundle: employee
+mode: default
+content:
+  field_company_name:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_dob:
+    type: age_field_formatter
+    label: inline
+    settings:
+      age_format: '1'
+      year_suffix: true
+      date_format: 'Y-m-d\TH:i:s'
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_goals:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_key_characteristics:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_profile_picture:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_tech_skill:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_title:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  layout_builder__layout: true
+  links: true

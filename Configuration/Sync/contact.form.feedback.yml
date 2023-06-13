@@ -1,0 +1,14 @@
+uuid: 0befb3bb-4be2-4223-b8d7-4c1aa2c0c254
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - deepak.pandey@employee-portal.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

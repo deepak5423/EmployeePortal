@@ -1,0 +1,18 @@
+uuid: 114827d0-4f2c-4378-91c5-61b2c946b709
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.employee
+    - node.type.project
+  module:
+    - field_ui
+    - node
+id: hr
+label: HR
+weight: 5
+is_admin: null
+permissions:
+  - 'administer node fields'
+  - 'create employee content'
+  - 'create project content'

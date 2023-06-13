@@ -1,0 +1,48 @@
+uuid: bda4479e-4c48-4fdf-9bd2-eedd4f8d06ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tech_skill
+field_name: field_tech_skill
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Drupal
+      label: Drupal
+    -
+      value: Html
+      label: Html
+    -
+      value: Css
+      label: Css
+    -
+      value: Php
+      label: Php
+    -
+      value: Git
+      label: Git
+    -
+      value: Java
+      label: Java
+    -
+      value: Python
+      label: Python
+    -
+      value: 'Java Script'
+      label: 'Java Script'
+    -
+      value: JQuery
+      label: JQuery
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

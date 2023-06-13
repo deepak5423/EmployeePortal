@@ -1,0 +1,29 @@
+uuid: dcb37888-5a82-4020-bfb1-acf2b59fd2f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_created_by
+    - node.type.blog_page
+    - node.type.employee
+id: node.blog_page.field_created_by
+field_name: field_created_by
+entity_type: node
+bundle: blog_page
+label: 'Created By'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      employee: employee
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

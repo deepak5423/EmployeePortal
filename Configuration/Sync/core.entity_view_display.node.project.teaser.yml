@@ -1,0 +1,28 @@
+uuid: 167ab707-e866-44aa-8ecc-7b02c984d67b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.project.field_customer_name
+    - field.field.node.project.field_made_by
+    - field.field.node.project.field_project_image
+    - field.field.node.project.field_start_date
+    - node.type.project
+  module:
+    - user
+id: node.project.teaser
+targetEntityType: node
+bundle: project
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_customer_name: true
+  field_made_by: true
+  field_project_image: true
+  field_start_date: true

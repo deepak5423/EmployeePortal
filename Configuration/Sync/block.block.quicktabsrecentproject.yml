@@ -1,0 +1,25 @@
+uuid: c4df8072-1aca-4fd9-b0a4-96773ea14e5a
+langcode: en
+status: true
+dependencies:
+  module:
+    - quicktabs
+    - system
+  theme:
+    - bartik
+id: quicktabsrecentproject
+theme: bartik
+region: content
+weight: -5
+provider: null
+plugin: 'quicktabs_block:recent_project'
+settings:
+  id: 'quicktabs_block:recent_project'
+  label: 'QuickTabs - Recent project'
+  label_display: visible
+  provider: quicktabs
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home

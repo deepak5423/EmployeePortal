@@ -1,0 +1,25 @@
+uuid: cea6d505-758c-41fd-8262-e4c72e21b248
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.admin-menu
+  module:
+    - system
+  theme:
+    - bartik
+id: adminmenu
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:admin-menu'
+settings:
+  id: 'system_menu_block:admin-menu'
+  label: 'Admin Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

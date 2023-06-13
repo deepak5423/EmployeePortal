@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: dd3df312-37c2-464a-99d7-160921bf7fd0
+name: employee-portal.com
+mail: deepak.pandey@employee-portal.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/251
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

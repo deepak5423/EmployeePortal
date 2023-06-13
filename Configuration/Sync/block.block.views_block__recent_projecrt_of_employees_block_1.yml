@@ -1,0 +1,30 @@
+uuid: fe1d82d6-b144-403b-ae64-4f1050b5cf9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recent_projecrt_of_employees
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__recent_projecrt_of_employees_block_1
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:recent_projecrt_of_employees-block_1'
+settings:
+  id: 'views_block:recent_projecrt_of_employees-block_1'
+  label: 'Recent Project'
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: 'Recent Project'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/employee/*'

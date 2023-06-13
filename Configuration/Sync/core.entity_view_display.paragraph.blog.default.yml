@@ -1,0 +1,89 @@
+uuid: 589876e4-3e61-4786-833c-ce03d52c9c12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.blog.field_blog_picture
+    - field.field.paragraph.blog.field_body
+    - paragraphs.paragraphs_type.blog
+  module:
+    - image
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: qwertyuiop
+          context_mapping: {  }
+          column_widths: 75-25
+        components:
+          83c29ebb-fafc-45d0-97db-a6ef6838d356:
+            uuid: 83c29ebb-fafc-45d0-97db-a6ef6838d356
+            region: first
+            configuration:
+              id: 'field_block:paragraph:blog:field_body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          3200b6d4-1ccd-4b4d-a84c-9a453e6d0bd3:
+            uuid: 3200b6d4-1ccd-4b4d-a84c-9a453e6d0bd3
+            region: second
+            configuration:
+              id: 'field_block:paragraph:blog:field_blog_picture'
+              label: 'blog picture'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: medium
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: paragraph.blog.default
+targetEntityType: paragraph
+bundle: blog
+mode: default
+content:
+  field_blog_picture:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

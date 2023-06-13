@@ -1,0 +1,17 @@
+uuid: 64fdbd59-bc0a-4611-8eb0-93dcca66eb55
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Employee
+type: employee
+description: 'All the employee'
+help: ''
+new_revision: true
+preview_mode: 2
+display_submitted: false

@@ -1,0 +1,58 @@
+uuid: 1024149d-9766-479e-8ef7-337e5f465718
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.employee.field_company_name
+    - field.field.node.employee.field_dob
+    - field.field.node.employee.field_goals
+    - field.field.node.employee.field_key_characteristics
+    - field.field.node.employee.field_name
+    - field.field.node.employee.field_profile_picture
+    - field.field.node.employee.field_tech_skill
+    - field.field.node.employee.field_title
+    - node.type.employee
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          54d26a13-fc1e-4113-a813-5a8563b5f2a0:
+            uuid: 54d26a13-fc1e-4113-a813-5a8563b5f2a0
+            region: content
+            configuration:
+              id: 'extra_field_block:node:employee:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.employee.teaser
+targetEntityType: node
+bundle: employee
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_company_name: true
+  field_dob: true
+  field_goals: true
+  field_key_characteristics: true
+  field_name: true
+  field_profile_picture: true
+  field_tech_skill: true
+  field_title: true

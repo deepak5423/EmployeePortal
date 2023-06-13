@@ -1,0 +1,111 @@
+uuid: 0604a8ed-c602-4b2a-a1a8-4443049a7f65
+langcode: en
+status: true
+dependencies: {  }
+id: recent_project
+label: 'Recent project'
+renderer: quick_tabs
+hide_empty_tabs: false
+default_tab: 9999
+options:
+  quick_tabs:
+    ajax: false
+    class: ''
+    style: tabsbar
+  accordion_tabs:
+    jquery_ui:
+      collapsible: false
+      heightStyle: auto
+configuration_data:
+  -
+    title: 'Project 1'
+    weight: 0
+    type: block_content
+    content:
+      block_content:
+        options:
+          bid: 'views_block:project_1-block_1'
+          block_title: ''
+          display_title: false
+      view_content:
+        options:
+          vid: all_blogs
+          display: default
+          args: ''
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      qtabs_content:
+        options:
+          machine_name: ''
+  -
+    title: 'Project 2'
+    weight: 0
+    type: block_content
+    content:
+      block_content:
+        options:
+          bid: 'views_block:project_1-block_2'
+          block_title: ''
+          display_title: false
+      view_content:
+        options:
+          vid: all_blogs
+          display: default
+          args: ''
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      qtabs_content:
+        options:
+          machine_name: ''
+  -
+    title: 'Project 3'
+    weight: 0
+    type: block_content
+    content:
+      block_content:
+        options:
+          bid: 'views_block:project_1-block_3'
+          block_title: ''
+          display_title: false
+      view_content:
+        options:
+          vid: all_blogs
+          display: default
+          args: ''
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      qtabs_content:
+        options:
+          machine_name: ''
+  -
+    title: 'Project 4'
+    weight: 0
+    type: block_content
+    content:
+      block_content:
+        options:
+          bid: 'views_block:project_1-block_4'
+          block_title: ''
+          display_title: false
+      view_content:
+        options:
+          vid: all_blogs
+          display: default
+          args: ''
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      qtabs_content:
+        options:
+          machine_name: ''

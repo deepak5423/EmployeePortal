@@ -1,0 +1,8 @@
+uuid: 6deccf16-796a-4bbe-8af2-8f32ddced417
+langcode: en
+status: true
+dependencies: {  }
+id: admin-menu
+label: 'Admin Menu'
+description: 'for admin use'
+locked: false
